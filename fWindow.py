@@ -14,7 +14,7 @@ class cWindow(QtWidgets.QMainWindow):
         self.xSize = cVec2(1500, 700)
         
         #percentage of velocity lost to air resistance
-        self.xAirRes = 0.35
+        self.xAirRes = 0.5
 
         #percentage of velocity lost when colliding
         self.xBounceLoss = 0.05
