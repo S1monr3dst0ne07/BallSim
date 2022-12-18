@@ -14,7 +14,7 @@ class cVec2:
         
     def IOp(self, xOp, xOth):
         self.xVal = xOp(self.xVal, xOth.xVal)
-        self.yVal = xOp(self.xVal, xOth.yVal)
+        self.yVal = xOp(self.yVal, xOth.yVal)
         return self
         
     def __add__(self, xOth):
@@ -35,3 +35,5 @@ class cVec2:
     def __idiv__(self, xOth):
         return self.IOp(lambda x,y: x/y, xOth)
 
+    def __iter__(self):
+        return iter([self.xVal, self.yVal])
